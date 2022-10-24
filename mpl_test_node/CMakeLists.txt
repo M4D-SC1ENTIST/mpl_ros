@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(mpl_test_node)
 
+set(CMAKE_CXX_STANDARD 14)
+
 # set default build type
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
