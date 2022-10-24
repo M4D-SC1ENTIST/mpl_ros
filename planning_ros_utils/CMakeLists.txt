@@ -3,6 +3,7 @@ project(planning_ros_utils)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wno-deprecated-declarations")
+set(VTK_DIR "/usr/lib/vtk/lib/cmake/vtk-9.2" CACHE PATH "VTK directory override" FORCE)
 find_package(catkin REQUIRED COMPONENTS rviz roscpp)
 find_package(catkin_simple REQUIRED)
 find_package(cmake_modules)
