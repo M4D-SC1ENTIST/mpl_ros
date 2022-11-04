@@ -55,6 +55,10 @@
 #include <vtkTriangleFilter.h>
 #include <vtkVersion.h>
 
+#include "vtkAutoInit.h" 
+VTK_MODULE_INIT(vtkRenderingOpenGL2); // VTK was built with vtkRenderingOpenGL2
+VTK_MODULE_INIT(vtkInteractionStyle);
+
 #define PCL_VIS 0
 
 inline double uniform_deviate(int seed) {
